@@ -9,6 +9,17 @@ marquee {
     line-height: 0;
 }
 
+body {
+    background-color: #e55;
+}
+
+html,
+body,
+#skull-container {
+    width: 100vw;
+    height: 100vh;
+}
+
 /* Safari detector */
 _::-webkit-full-page-media, _:future, :root body,
 _::-webkit-full-page-media, _:future, :root html {
@@ -40,16 +51,6 @@ _::-webkit-full-page-media, _:future, :root #skull-face {
 
 /* end safari detector */
 
-body {
-    background-color: #e55;
-}
-
-html,
-body,
-#skull-container {
-    width: 100vw;
-    height: 100vh;
-}
 
 .teeth-gold {
     fill: #F6BE40;
