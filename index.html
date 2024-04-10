@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">@import url("css/style.css");</style>
+    <script type="text/javascript">
+        var isSafari = window.safari !== undefined;
+        window.onload = function() {
+            if (isSafari) console.log("Safari, yeah!");
+        }
+    </script>
+
     <title>GetRadicalDude</title>
 </head>
 <body>
@@ -33,9 +40,5 @@
             </svg>
         </marquee>
     </marquee>
-    <script type="text/javascript">
-        var isSafari = window.safari !== undefined;
-        if (isSafari) console.log("Safari, yeah!");
-    </script>
 </body>
 </html>
