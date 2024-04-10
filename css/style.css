@@ -9,15 +9,62 @@ marquee {
     line-height: 0;
 }
 
-html,
+/* Safari detector */
+_::-webkit-full-page-media, _:future, :root body,
+_::-webkit-full-page-media, _:future, :root html {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+_::-webkit-full-page-media, _:future, :root marquee {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+    height: 100vh;
+    width: 100vw;;
+}
+
+_::-webkit-full-page-media, _:future, :root #skull-face {
+    animation-name: float-anim;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(.35,0,.55,1);
+    animation-iteration-count: infinite;
+    /* animation: float-anim 4s cubic-bezier(.35,0,.55,1) infinite;*/
+}
+
+/* end safari detector */
+
 body {
+    background: #e55;
+}
+
+html,
+body,
+#skull-container {
     width: 100vw;
     height: 100vh;
-    background: #e55;
-    color: black;
 }
 
 .teeth-gold {
     fill: #F6BE40;
 }
 
+/* animations */
+
+@keyframes float-anim {
+	0% {
+		transform: translateY(-10%);
+	}
+	50% {
+		transform: translateY(10%);
+	}
+	100% {
+		transform: translateY(-10%);
+	}
+}
