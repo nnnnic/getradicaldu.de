@@ -61,6 +61,18 @@ _::-webkit-full-page-media, _:future, :root #skull-face {
     fill: #F6BE40;
 }
 
+#eye-right,
+#eye-left {
+	animation: blink-anim 8s linear 2s infinite;
+}
+
+#eye-right {
+	transform-origin: center 10px;
+}
+#eye-left {
+	transform-origin: center 20px;
+}
+
 /* animations */
 
 @keyframes float-anim {
@@ -72,5 +84,25 @@ _::-webkit-full-page-media, _:future, :root #skull-face {
 	}
 	100% {
 		transform: translateY(-10%);
+	}
+}
+@keyframes blink-anim {
+	0% {
+		transform: scale(1, 1);
+	}
+	1% {
+		transform: scale(1, .1);
+	}
+	2% {
+		transform: scale(1, 1);
+	}
+	3% {
+		transform: scale(1, .1);
+	}
+	4% {
+		transform: scale(1, 1);
+	}
+	100% {
+		transform: scale(1, 1);
 	}
 }
