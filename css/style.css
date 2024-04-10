@@ -41,7 +41,7 @@ _::-webkit-full-page-media, _:future, :root #skull-face {
 /* end safari detector */
 
 body {
-    background: #e55;
+    background-color: #e55;
 }
 
 html,
